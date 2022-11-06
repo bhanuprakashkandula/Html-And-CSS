@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> venkatesh</title>
+	<style>
+		body
+		{
+         background-image: url(https://2.bp.blogspot.com/-h753TM82hag/Vzs4IN5Mk5I/AAAAAAAABvo/Ov28cy51uicEE5jk0RrgNNac5nio3VMgQCLcB/s1600/Prati%2BTirupati%2BBalaji%2BKetkawale%2Btemple.JPG);
+         background-size: cover;
+         margin-top: 650px;
+         margin-left: -100px;
+         margin-bottom: -50px;
+		}
+		div
+		{
+			width: 300px;
+			height: 400px;
+			position: relative;
+			margin: 50PX auto;
+			overflow: hidden;
+			border-radius: 10px;
+		}
+		div:hover
+		{
+				cursor: pointer;
+		}
+		div>img
+		{
+			height: inherit;
+			width: inherit;
+		}
+		div>#curtain
+		{
+			position: absolute;
+			top:-50px;
+			left: 0px;
+			transition: all 1s linear 1s;
+		}
+		div:hover>#curtain
+		{
+			transform: translateY(-100%);
+		}
+		div>#left
+		{
+			position: absolute;
+			top: -50px;
+			left:-150px;
+			transition: all 2s linear 0s;
+			width: 100%;
+			transform-origin: left;
+		}
+		div:hover>#left
+		{
+			transform: perspective(200px) rotateY(20deg);
+		}
+		div>#right
+		{
+			position: absolute;
+			top: -50px;
+			left: 150px;
+			transition: all 2s linear 0s;
+			width: 100%;
+			transform-origin: right;
+		}
+		div:hover>#right
+		{
+			transform: perspective(200px) rotateY(-20deg);
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+  		<img src="lord.jpg">
+  		<div id="curtain"><img src="curtain.jpeg"></div>
+ 		<div id="left"><img src="door.jpg"></div>
+	    <div id="right"><img src="door.jpg"></div>
+	</div>
+</body>
+</html>

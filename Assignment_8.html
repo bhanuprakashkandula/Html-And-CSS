@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS transformations</title>
+	<style>
+     body
+     {
+      margin: 5px;
+      background-color: maroon;
+
+     }
+     header
+     {
+     	position: sticky;
+      background-color: whitesmoke;
+      color: maroon;
+      text-shadow: 0 0 10px blue;
+      padding: 15px;
+      text-align: center;
+     }
+    #AA
+     {
+     position: relative;
+     
+     top: 100px;
+     left: 100px;
+     width: 750px;
+     transition: all 1s linear 0s;
+     }
+     #AA:hover
+	 {
+     	cursor: pointer;
+      	transform:translateY(-350px);
+      }
+     #BB
+     {
+     	border: 5PX solid white;
+     	box-shadow: 0 0 20PX BLUE;
+     	margin-top: -260px;
+     	margin-left: 100px;
+     	width: 350PX;
+     	color: BLUE;
+     	text-shadow: 0 0 10PX white;
+     	border-radius: 20px;
+     }
+     img
+     	{
+     		border: 5PX solid white;
+     		border-radius: 20px;
+           box-shadow: 0 0 20px blue;
+     	}
+	</style>
+</head>
+<body>
+	<header>Stylish T Shirt</header>
+
+ <div id="AA">
+ 	<h2><img src="F:\new to html\mini-project\shirt.jpg" width="750px" height="750px"></h2>
+ </div>
+
+<div id="BB" >
+    <h2>Cost:  Rs 200.00</h2>
+  	<h2>Cloth type: Cotton</h2>
+ 	<h2>Size:L</h2>
+    <h2>Type :Sleev</h2>
+    <h2>color: Black</h2>
+</div>
+</body>
+</html>

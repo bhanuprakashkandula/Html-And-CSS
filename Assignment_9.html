@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css animations</title>
+	<style>
+     div
+     {
+      height: 550px;
+      width: 550px;
+      margin: 100px auto;
+      box-shadow: 0 0 20px blue;
+      position: relative;
+      overflow: hidden;
+     }
+     div:hover
+     {
+      cursor: pointer;
+     }
+     div>img
+     {
+      width: inherit;
+      height: inherit;
+     }
+      div>#A1
+     {
+      background-color:deeppink;
+      position: absolute;
+      left: 0px;
+      top: -100px;
+      transition: all 1s linear 3s;
+     }
+     div:hover>#A1
+     {
+     transform: translateY(-100%); 
+     }
+      div>#A2
+     {
+      background-color:blue;
+      position: absolute;
+      left: 0px;
+      top: -100px;
+      transition: all 1s linear 2s;
+     }
+     div:hover>#A2
+     {
+     transform: translateX(100%); 
+     }
+      div>#A3
+     {
+      background-color:green;
+      position: absolute;
+      left: 0px;
+      top: -100px;
+      transition: all 1s linear 1s;
+     }
+     div:hover>#A3
+     {
+     transform: translateY(100%); 
+     }
+      div>#A4
+     {
+      background-color:white;
+      position: absolute;
+      left: 0px;
+      top: -100px;
+      transition: all 1s linear 0s;
+     }
+     div:hover>#A4
+     {
+     transform: translateX(-100%); 
+     }
+	</style>
+</head>
+<body>
+<div>
+<img src="D:\Sayonara photos\IMG_20201214_093446_990.jpg">
+<div id=A1></div>
+<div id="A2"></div>
+<div id="A3"></div>
+<div id="A4"></div>
+</div>
+</body>
+</html>

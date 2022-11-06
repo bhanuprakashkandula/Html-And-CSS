@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Animations</title>
+	<style>
+		body
+		{
+         background-color: black;
+		}
+     div
+     {
+     margin: 200px auto;
+      background: linear-gradient(45deg,orange,red,blue,maroon,yellow);
+      width: 100px;
+      height: 100px;
+      position: relative;
+      animation-name: bhanu;
+      animation-duration: 2s;
+      animation-delay: 1s;
+      animation-timing-function: linear;
+      animation-iteration-count:infinite ;
+     }
+     @keyframes bhanu
+     {
+       0%
+       {
+         top: 0px;
+         left: 0px;
+         border-radius:0px ;
+       } 
+       25%
+       {
+         top: 0px;
+         left: 200px;
+         border-radius:50px 0px 0px 0px;
+       }
+       50%
+       {
+         top: 200px;
+         left: 200px;
+         border-radius:0px 50px 50px 0px;
+       }
+       75%
+       {
+        top: 200px;
+        left: 0px;
+        border-radius:0px 0px 50px 50px;
+       }
+       100%
+       {
+        top: 0px;
+        left: 0px;
+        border-radius:0px 0px 0px 50px;
+       }
+     }
+     
+	</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

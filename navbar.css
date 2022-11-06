@@ -1,0 +1,100 @@
+body
+{
+margin: 0px;
+}
+header
+{
+ background-color: black;
+ justify-content: space-between;
+ display: flex;
+ align-items: center;
+ padding: 10px;
+ height: 60px;
+ color: white;
+ 
+}
+header>h1
+{
+color: whitesmoke;
+ margin: 0px;
+}
+.fa
+{
+ margin-right: 10px;
+}
+header>.nav-links>a
+{
+background-color:orange ;
+padding: 7px 30px;
+color: black;
+border-radius: 10px;
+ text-decoration: none;
+}
+header>.nav-links>a:hover
+{
+ box-shadow: 0 0 20px whitesmoke;
+ color: white;
+}
+@media(min-width: 0px) and (max-width: 960px)
+{
+  header
+  {
+   height: 100px;
+   flex-direction: column;
+  }
+  header>.nav-links>a
+  {
+    position: relative;
+    top: -20px;
+  }
+}
+@media(min-width: 0px) and (max-width: 660px)
+{
+header
+{
+  height: 100px;
+  flex-direction: column;
+}
+header>.nav-links>a
+{
+  margin: 0px;
+}
+}
+.landing-page
+{
+  background: black url("soft.jpg")no-repeat 0px 0px fixed;
+  background-size: cover;
+  height: 100vh;
+}
+.landing-page>.wrapper
+{
+ background-color: rgba(0, 0, 0, 0.3);
+ height: inherit;
+ color: whitesmoke;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.landing-page>.wrapper>h1
+{
+  margin: 0px;
+  font-size: 46px;
+  font-family:"comic sans ms",sans-serif;
+}
+.landing-page>.wrapper>button
+{
+  border: none;
+  background-color: orange;
+  outline: none;
+  padding: 8px 15px;
+  width: 170px;
+  border-radius: 10px;
+  color: black;
+}
+.landing-page>.wrapper>button:hover
+{
+ color: whitesmoke;
+ box-shadow: 0 0 15px orangered;
+}
