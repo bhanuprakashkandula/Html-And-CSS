@@ -1,0 +1,121 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Mdb-bootstrap</title>
+ 	<link rel="stylesheet" type="text/css" href="../../MDB/css/bootstrap.css">
+ 	<link rel="stylesheet" type="text/css" href="../../MDB/css/mdb.css">
+ 	<link rel="stylesheet"href="F:\new to html\fontawesome-free-6.2.0-web\css\all.css">
+ 	<style>
+    #aa
+    {
+      background-color: green;
+      height: 250px;
+      font-size: 100px;
+      text-align:center;
+      color: whitesmoke;
+    }
+    #bb  
+    {
+     background-color: red;
+     height: 250px;
+      font-size: 100px;
+      width: 1000px;
+      text-align:center;
+      color: whitesmoke;
+    } 
+    i:hover 
+     {
+      cursor: pointer;
+       color: gold;
+       text-shadow: 0px 0px 100px black;
+     }
+     .container-fluid
+     {
+      grid: flex;
+     }
+     #result
+     {
+       padding: 90px;
+       width: 100%;
+       background-color:black;
+       color: orange;
+       text-align: center;
+       font-size: 30px;
+     }
+     span:hover
+     {
+      cursor: pointer;
+      color: whitesmoke;
+      text-shadow: 0px 0px 5px red;
+     }
+ 	</style>
+ </head>
+ <body>
+ 	     <header>
+           <img src="F:\Jscript\primary-share.png"width="1500px" height="300px" class="rounded float-left" alt="..."> 
+ 	     </header>
+
+ 	      <div class="container-fluid">
+
+             <div class="row">
+
+
+        <div class="col-6" id="aa">
+           <span onclick="incCount()"><i class="fa-solid fa-thumbs-up"></i></span>  
+           <h3 id="okati"> </h3>              
+        </div>
+
+        <div class="col-6" id="bb">
+            <span onclick="dicCount()"><i class="fa-solid fa-thumbs-down"></i></span>
+             
+            <h3 id="rendu"></h3>    
+        </div>
+             <div class="col-12" id="result">
+            <span onclick="Total()">Total Rasponses:</i></span>
+             
+            <h3 id="response"></h3>
+             </div>
+        </div>
+         
+         <script>
+            /*......like.....*/
+
+  let aaTag=document.querySelector('#okati');
+    let like=0;
+    aaTag.innerText=like;
+
+    function incCount()
+    {
+      like++;
+      aaTag.innerText=like;
+    }
+
+    //......Dislike......
+
+    let bbTag=document.querySelector('#rendu');
+    let Dislike=0;
+    bbTag.innerText=Dislike;
+    function dicCount()
+    {
+      Dislike++;
+      bbTag.innerText=Dislike;
+    }
+    //....response.....
+
+    let resultTag=document.querySelector('#response');
+         let res=0;
+         resultTag.innerText=res;
+      function Total()
+      {
+         res=like+Dislike;
+         resultTag.innerText=res;
+      }
+         </script>
+
+
+  <script src="../../MDB/js/bootstrap.js"></script>
+  <script src="../../MDB/js/jquery.js"></script>
+  <script src="../../MDB/js/mdb.js"></script>
+  <script src="../../MDB/js/popper.js"></script>
+ </body>
+ </html>
